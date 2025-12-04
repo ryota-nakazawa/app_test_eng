@@ -53,8 +53,12 @@ export default function ContactPage() {
 
       setSuccess('お問い合わせを受け付けました。ご連絡ありがとうございます。');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError('An unexpected error occurred');
+      }
     } finally {
       setLoading(false);
     }
