@@ -1,5 +1,5 @@
 import { signIn } from "@/auth"
-import { Button, Container, Typography, Box, Paper } from "@mui/material"
+import { Button, Container, Typography, Paper } from "@mui/material"
 import GoogleIcon from '@mui/icons-material/Google';
 
 export default function SignIn() {

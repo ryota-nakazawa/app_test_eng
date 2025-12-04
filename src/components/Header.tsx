@@ -18,6 +18,13 @@ export default async function Header() {
 
         {session?.user ? (
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            {session.user.role === 'admin' && (
+              <Link href="/admin" style={{ textDecoration: 'none' }}>
+                <Button color="inherit" size="small" sx={{ mr: 1 }}>
+                  Admin Dashboard
+                </Button>
+              </Link>
+            )}
             <Link href="/dashboard" style={{ textDecoration: 'none' }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, cursor: 'pointer' }}>
                 <Avatar
