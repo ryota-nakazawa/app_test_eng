@@ -89,19 +89,7 @@ export default function LandingPage() {
       <CssBaseline />
       <Box sx={{ flexGrow: 1, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         {/* Header */}
-        <AppBar position="fixed" color="transparent" elevation={0} sx={{ bgcolor: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold', color: 'primary.main', display: 'flex', alignItems: 'center', gap: 1 }}>
-              <AutoFixHighIcon /> AI English Coach
-            </Typography>
-            <Button variant="outlined" color="primary" sx={{ px: 3 }}>
-              Login
-            </Button>
-            <Button variant="contained" color="primary" sx={{ ml: 2, px: 3, boxShadow: 'none' }}>
-              Sign Up
-            </Button>
-          </Toolbar>
-        </AppBar>
+
 
         {/* Hero Section */}
         <Box
